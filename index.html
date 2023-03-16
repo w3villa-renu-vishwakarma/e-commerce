@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <title>E-commerce</title>
+</head>
+
+<body>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@ HEADER SECTION START @@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <header>
+        <!-- there are 3 header section  -->
+
+        <!-- @@@@@@@@@@@@ start of first section -->
+        <div class="header-section1 left-right-margin">
+            <!-- Home , about us , contact , FAQ -->
+            <div class="menu">
+                <div class="home">
+                    <a>
+                        <i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </a>
+                </div>
+                <div class="about-us">
+                    <a>
+                        <i class="fa-regular fa-star"></i>
+                        <p>About Us</p>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a>
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>Contact</p>
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <a>
+                        <i class="fa-solid fa-question"></i>
+                        <p id="faq">FAQ</p>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="drop-down-menu">
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- language and currency  -->
+            <div class="language-currency">
+                <div class="language dropdown">
+                    <a>
+                        <p id="country-name "> 🇺🇸English</p>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="drop-down-menu">
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                    </ul>
+                </div>
+                <div class="currency dropdown">
+                    <a>
+                        <div id="currency-logo">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <p id="currency-name">Us Dollar</p>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="drop-down-menu">
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- More menus and delivery -->
+            <div class="more-menu-delivery">
+                <div class="more-menu dropdown">
+                    <a>
+                        <div>
+                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <p id="More-enu">More Menus</p>
+                        <i class="fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="drop-down-menu">
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                    </ul>
+                </div>
+                <div class="delivery">
+                    <a>
+                        <i class="fa-solid fa-truck"></i>
+                        <p>Delivery</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- @@@@@@@@@@@@@@@@@@@@ end of first section -->
+
+        <!-- @@@@@@@@@@@@@@@@@@@@ start of second section -->
+        <!-- this section contain logo , search bar , login , register , compare , wishlist , cart , price -->
+        <div class="header-section2 left-right-margin">
+            <!-- 1. Brand logo -->
+
+            <div class="brand-logo">
+                <h1>JOURNAL</h1>
+            </div>
+
+            <!-- 2. Search bar -->
+
+            <div class="searchbar">
+                <div class="dropdown">
+                    <div class="all-dropdown">
+                        <a>
+                            <p id="Al">ALL</p>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </a>
+                    </div>
+
+                    <ul class="drop-down-menu">
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="Search here..." />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <!-- 3. login and other menu container -->
+
+            <div class="login-wishlist">
+                <a>
+                    <i class="fa-solid fa-user"></i>
+                    <p>Login</p>
+                </a>
+                <a href="# ">
+                    <i class="fa-solid fa-pencil"></i>
+                    <p>Register</p>
+                </a>
+                <a>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Wishlist</p>
+                </a>
+                <a>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <p>Compare</p>
+                </a>
+            </div>
+
+
+            <!-- 4.cart and price detils -->
+
+            <div class="cart-price">
+                <div id="item-counter">0</div>
+                <div>
+                    <p>&nbsp;item(s) -</p>
+                </div>
+                <div id="currency-name">$</div>
+                <div id="total-cart-price">0.00</div>
+                <div class="cart-icon">
+                    <a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- @@@@@@@@@@@@@@@@@@@@ end of second section -->
+
+        <!-- @@@@@@@@@@@@@@@ start of third section @@@@@@@@@@@@  -->
+        <!-- third section contain all departments ,multilevel , mega menu , full width , contact , blog -->
+        <div class="header-section3 left-right-margin">
+            <!-- 1. menu  -->
+
+            <div class="second-menu">
+                <div>
+                    <a class="bars-icon">
+                        <div class="hamburgur"><i class="fa-solid fa-bars"></i></div>
+                        <p>All departments</p>
+                        <div class="sale">Sale</div>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <p>multilevel</p>
+                    </a>
+                </div>
+
+                <div class="mega-menu">
+                    <a>
+                        <p>Mega Menu</p>
+                        <div class="new">New</div>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <p>fullwidth</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. contact and blog button  -->
+
+            <div class="contact-blog">
+                <div class="contact">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>1.800.555.6789</p>
+                </div>
+                <div class="blog">
+                    <i class="fa-solid fa-message"></i>
+                    <p>BLOG</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@ end of third section @@@@@@@@@@@@@@@@ -->
+    </header>
+    <!-- @@@@@@@@@@@@@@@@@@@@@ HEADER SECTION END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <!-- @@@@@@@@@@@@@@@@@@@@ image craousel @@@@@@@@@@@@@@@@ -->
+    <section class="section1 left-right-margin">
+        <div class="carousel">
+            <div class="slides" id="hero-slider">
+                <div class="mySlides fade" style="display: block;">
+                    <img src="./assets/image/phone.jpg" style="width: 100%">
+                    <div class="text-over-image">
+                        <input type="button" value="MOBILE">
+                        <h1>Best Watch options at any resolution</h1>
+                        <div class="learn-more">
+                            <p>LEARN MORE →</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade" style="display: none;">
+                    <img src="./assets/image/phone.jpg" style="width: 100%">
+                    <div class="text-over-image">
+                        <input type="button" value="LAPTOP">
+                        <h1>Best Laptop options at any resolution</h1>
+                        <div class="learn-more">
+                            <p>LEARN MORE →</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade" style="display: none;">
+                    <img src="./assets/image/phone.jpg" style="width: 100%">
+                    <div class="text-over-image">
+                        <input type="button" value="MOBILE">
+                        <h1>Best Mobile options at any resolution</h1>
+                        <div class="learn-more">
+                            <p>LEARN MORE →</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+        </div>
+        <div class="side-card-container">
+            <div class="card">
+                <div class="text-over-card-image">
+                    <p>WEARABLES</p>
+                    <h2>Intelligent <br>& Durable <br> Design</h2>
+                </div>
+                <div class="image">
+                    <img src="./assets/image/watch.png" alt="" />
+                </div>
+            </div>
+            <div class="card">
+                <div class="text-over-card-image">
+                    <p>COMPUTERS</p>
+                    <h2>Build your <br>own high <br>powered PC</h2>
+                </div>
+                <div class="image">
+                    <img src="./assets/image/computer.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @@@@@@@@@@@@@@@@@@@ section 2 @@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="section2">
+        <div class="free-shipping">
+            <i class="fa-solid fa-truck-fast fa-2x"></i>
+            <div class="text">
+                <h2>Free Shipping</h2>
+                <p>Free delivery over $100</p>
+            </div>
+        </div>
+        <div class="free-returns">
+            <i class="fa-solid fa-arrow-rotate-left fa-2x"></i>
+            <div class="text">
+                <h2>Free Returns</h2>
+                <p>Hassle free returns</p>
+            </div>
+        </div>
+        <div class="secure-shopping">
+            <i class="fa-solid fa-shield-halved fa-2x"></i>
+            <div class="text">
+                <h2>Secure Shopping</h2>
+                <p>Best security features</p>
+            </div>
+        </div>
+        <div class="unlimited-blocks">
+            <i class="fa-solid fa-cube fa-2x"></i>
+            <div class="text">
+                <h2>Unlimited Blocks</h2>
+                <p>Any content , any page</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@ section 3 @@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="section3 left-right-margin">
+        <div class="why-buy-text">
+            <h1>Why buy from us?</h1>
+            <hr />
+            <p>Journal has been selling and most loved Opencart theme since first launch in 2013. Tried and tested by
+                over
+                20K people,
+                Journal <br>is the best Opencart theme framework on the market today
+                <span><a href="">Learn more</a></span>
+            </p>
+        </div>
+
+        <div class="categories-navigation-container">
+            <a>
+                <p class="active-why-buy">
+                    top categories
+                </p>
+            </a>
+
+            <a>
+                <p>electronics</p>
+            </a>
+            <a>
+                <p>beauty</p>
+            </a>
+            <a>
+                <p>fashiion</p>
+            </a>
+        </div>
+        <div class=" img-container ">
+            <div class="text-center">
+                <img src="assets/image/fashion.jpeg" alt="..." height="380px" width="280px">
+                <button>FASHION</button>
+            </div>
+            <div class="text-center">
+                <img src="assets/image/bags.jpg" alt="..." height="380px" width="280px">
+                <button>BAGS</button>
+
+            </div>
+            <div class="text-center">
+                <img src="assets/image/beauty.png" alt="..." height="380px" width="280px">
+                <button>HEALTH & BEAUTY</button>
+
+            </div>
+            <div class="text-center">
+                <img src="assets/image/footwear.jpg" alt="..." height="380px" width="280px">
+                <button>FOOTWEAR</button>
+
+            </div>
+            <div class="text-center">
+                <img src="assets/image/home-decor.jpg" alt="..." height="380px" width="280px">
+                <button>HOME DECOR</button>
+            </div>
+        </div>
+    </section>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@ section 4 @@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="section3 left-right-margin">
+        <div class="why-buy-text">
+            <h1>Featured Products</h1>
+            <hr />
+            <p>Journal has been selling and most loved Opencart theme since first launch in 2013. Tried and tested by
+                over
+                20K people,
+                Journal <br>is the best Opencart theme framework on the market today
+                <span><a href="">Learn more</a></span>
+            </p>
+        </div>
+
+        <div class="categories-navigation-container">
+            <a>
+                <p class="active-why-buy">
+                    Featured
+                </p>
+            </a>
+
+            <a>
+                <p>Latests</p>
+            </a>
+            <a>
+                <p>Bestsellers</p>
+            </a>
+            <a>
+                <p>specials</p>
+            </a>
+        </div>
+        <div class="row d-flex">
+            <ul id="home_products" class="d-flex"> 
+            
+            </ul>
+        </div>
+    </section>
+    <!-- @@@@@@@@@@@@@@@@@@@@ Featured Category @@@@@@@@@@@@@@@@@@@@ -->
+    <section class="section3 left-right-margin section-category">
+        <div class="why-buy-text">
+            <h1>Featured Category</h1>
+            <hr />
+            <p>Journal has been selling and most loved Opencart theme since first launch in 2013. Tried and tested by
+                over
+                20K people,
+                Journal
+            </p>
+        </div>
+        <div class="fashion-category-container">
+            <div class="fashion">
+                <span>Fashion</span>
+                <hr class="hr" />
+                <div class="image-container">
+                    <img src="./assets/image/fashion.jpeg" alt="" />
+                </div>
+                <div class="text-container">
+                    <p>Accesories</p>
+                    <p>Dressed</p>
+                    <p>Pants</p>
+                    <p>T-Shirts</p>
+                    <a><u>See all in Fashion</u></a>
+                </div>
+            </div>
+        </div>
+        <div class="new-in-fashion-container">
+            <div class="new-in-fashion">
+                <span>New in Fashion</span>
+                <hr class="hr" />
+                <div class="new-in-fashion-image-container">
+                    <img src="./assets/image/fashion.jpeg" alt="" />
+
+                    <div class="text-container">
+                        <a>Bodycorn Dress</a>
+                        <p>$399.00</p>
+                    
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@ Shop BY brand @@@@@@@@@@@@@@@@@@@ -->
+    <section class="shop-by-brand why-buy-from-us left-right-margin">
+        <!-- 1.heading (& text) -->
+
+        <div class="why-buy-text">
+            <h1>Shop by Brand</h1>
+            <hr />
+        </div>
+
+        <div class="brand-images">
+
+            <img src="assets/image/apple.png" height="100px" width="200px">
+
+
+            <img src="assets/image/nike.jpeg" height="100px" width="200px">
+
+
+            <img src="assets/image/htc logo.png" height="100px" width="200px">
+
+
+            <img src="assets/image/melissa.jpg" height="100px" width="200px">
+
+            <img src="assets/image/superbrand.jpeg" height="100px" width="200px">
+
+
+            <img src="assets/image/sony logo.png" height="100px" width="200px">
+
+
+        </div>
+    </section>
+    <!-- @@@@@@@@@@@@@@@@ Improved gallery module @@@@@@@@@@@@@@ -->
+    <section class="improved-gallery why-buy-from-us left-right-margin">
+        <div class="why-buy-text">
+            <h1>Improved Gallery Module</h1>
+            <hr />
+            <p>
+                The gallery module supports images Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Iure fugit nostrum nisi reprehenderit,
+                repudiandae quas praesentium in expedita tenetur voluptatem voluptas
+                magni! Sequi aliquid nobis, amet voluptates ratione totam accusantium?
+            </p>
+        </div>
+        <div class="gallary-image-container">
+            <img src="assets/image/g1.jpeg" alt="">
+            <img src="assets/image/g9.jpeg" alt="">
+            <img src="assets/image/g2.jpeg" alt="">
+            <img src="assets/image/g3.jpeg" alt="">
+            <img src="assets/image/g4.jpeg" alt="">
+            <img src="assets/image/g5.jpeg" alt="">
+            <img src="assets/image/g6.jpeg" alt="">
+            <img src="assets/image/g7.jpeg" alt="">
+            <img src="assets/image/g8.jpeg" alt="">
+        </div>
+    </section>
+    <!-- @@@@@@@@@@@@@@@@ from our blog @@@@@@@@@@@@@@@@ -->
+    <section class="section3 left-right-margin">
+        <div class="why-buy-text">
+            <h1>From our Blog</h1>
+            <hr />
+            <p>Journal has been selling and most loved Opencart theme since first launch in 2013. Tried and tested by
+                over
+                20K people,
+                Journal
+            </p>
+        </div>
+
+        <div class="categories-navigation-container">
+            <a>
+                <p class="active-why-buy">
+                    LATEST POSTS
+                </p>
+            </a>
+
+            <a>
+                <p>MOST READ</p>
+            </a>
+
+        </div>
+        <div class="blog d-flex" style="background-color: none;">
+            <div class="blog-container" style="display: block; width:25%;">
+                <div class="badge-blog">02<br>Aug</div>
+                <div>
+                    <img src="assets/image/man with bag.jpg"> 
+    
+                </div>
+                <div>
+                    <p class="content"><i class="fa-solid fa-user"></i>admin &nbsp; <i
+                        class="fa-solid fa-comment-dots"></i>38 &nbsp; <i class="fa-solid fa-eye"></i>19340</p>
+                </div>
+                <div>
+                    <h1>Journal blog is here</h1>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Totam provident ea mollitia dolorum ipsum
+                        esse eligendi, est veniam veritatis nesciunt <br> eum eos laborum iusto sit sapiente, expedita soluta?
+                        Aliquid, quas?</p>
+                </div>
+            </div>
+            <div class="blog-container" style="display: block; width:25%;">
+                <div class="badge-blog">02<br>Aug</div>
+                <div>
+                    <img src="assets/image/man with bag.jpg"> 
+    
+                </div>
+                <div>
+                    <p class="content"><i class="fa-solid fa-user"></i>admin &nbsp; <i
+                        class="fa-solid fa-comment-dots"></i>38 &nbsp; <i class="fa-solid fa-eye"></i>19340</p>
+                </div>
+                <div>
+                    <h1>Journal blog is here</h1>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Totam provident ea mollitia dolorum ipsum
+                        esse eligendi, est veniam veritatis nesciunt <br> eum eos laborum iusto sit sapiente, expedita soluta?
+                        Aliquid, quas?</p>
+                </div>
+            </div>
+            <div class="blog-container" style="display: block; width:25%;">
+                <div class="badge-blog">02<br>Aug</div>
+                <div>
+                    <img src="assets/image/man with bag.jpg"> 
+    
+                </div>
+                <div>
+                    <p class="content"><i class="fa-solid fa-user"></i>admin &nbsp; <i
+                        class="fa-solid fa-comment-dots"></i>38 &nbsp; <i class="fa-solid fa-eye"></i>19340</p>
+                </div>
+                <div>
+                    <h1>Journal blog is here</h1>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Totam provident ea mollitia dolorum ipsum
+                        esse eligendi, est veniam veritatis nesciunt <br> eum eos laborum iusto sit sapiente, expedita soluta?
+                        Aliquid, quas?</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- @@@@@@@@@@@@@@@@ what are people saying about us @@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="people-saying-about-us from-our-blog why-buy-from-us left-right-margin">
+        <!-- 1.heading (& text) -->
+
+        <div class="why-buy-text">
+            <h1>What are people saying about us</h1>
+            <hr />
+        </div>
+        <div class="item d-flex">
+            <div class="featured-products-card">
+                <p class="quote"><i class="fa-solid fa-quote-left"></i></p>
+                <div class="blog-paragraph-container">
+                    <p>
+                        I've purchased hundreds Lorem ipsum, dolor sit <br> consectetur adipisicing elit. Voluptatum,
+                        <br> esse porro incidunt accusantium magnam <br>blanditiis sint nulla eum asperiores, hic
+                        <br> officia? Voluptatum, quia fuga <br> explicabo ullam beatae maiores!
+                    </p>
+                    <a class="author">
+                        <p> -charlibaltimore</p>
+                    </a>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <p class="quote"><i class="fa-solid fa-quote-left"></i></p>
+                <div class="blog-paragraph-container">
+                    <p>
+                        I've purchased hundreds Lorem ipsum, dolor sit <br>consectetur adipisicing elit. Voluptatum,
+                        <br> esse porro incidunt accusantium magnam <br>blanditiis sint nulla eum asperiores, hic
+                        <br>officia? Voluptatum, quia fuga<br> explicabo ullam beatae maiores!
+                    </p>
+                    <a class="author">
+                        <p> -charlibaltimore</p>
+                    </a>
+                </div>
+            </div>
+            <div class="featured-products-card">
+                <p class="quote"><i class="fa-solid fa-quote-left"></i></p>
+                <div class="blog-paragraph-container">
+                    <p>
+                        I've purchased hundreds Lorem ipsum, dolor sit <br> consectetur adipisicing elit. Voluptatum,
+                        <br> esse porro incidunt accusantium magnam<br>blanditiis sint nulla eum asperiores, hic
+                        <br>officia? Voluptatum, quia fuga <br> explicabo ullam beatae maiores!
+                    </p>
+                    <a class="author">
+                        <p> -charlibaltimore</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Most-Viewed @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="most-viewed left-right-margin">
+        <div class="most-viewed-text">
+            <h3>MOST VIEWED</h3>
+            <hr />
+        </div>
+        <div class="most-viewed-container d-flex">
+
+            <div class=" container-one d-flex">
+
+                <div class="images">
+                    <img src="assets/image/glasses.jpg" height="80px" width="100px" />
+                </div>
+                <div class="name">
+                    <p>Oversized Sunglasses</p>
+                    <span class="price">
+                        <p>$397.00</p>
+                    </span>
+                    <br>
+                    <div class="most-viewed-icon"><i class="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp;<i
+                            class="fa-regular fa-heart"></i> &nbsp;
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-arrow-left border"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-two d-flex">
+
+                <div class="images">
+                    <img src="assets/image/headphones.jpg" height="80px" width="100px" />
+                </div>
+                <div class="name">
+                    <p>Headphones</p>
+                    <span class="price">
+                        <p class="red-color">$999.00 &nbsp;<s style="color: black;">$3,299.00</s></p>
+                    </span>
+                    <br>
+                    <div class="most-viewed-icon"><i class="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp;<i
+                            class="fa-regular fa-heart"></i> &nbsp;
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-arrow-left border"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-three d-flex">
+
+                <div class="images">
+                    <img src="assets/image/heels.jpg" height="80px" width="100px" />
+                </div>
+                <div class="name">
+                    <p>Women's Maria Pump</p>
+                    <span class="price">
+                        <p>$425.00</p>
+                    </span>
+                    <br>
+                    <div class="most-viewed-icon"><i class="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp;<i
+                            class="fa-regular fa-heart"></i> &nbsp;
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-arrow-left border"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" container-four d-flex">
+
+                <div class="images">
+                    <img src="assets/image/glasses.jpg" height="80px" width="100px" />
+                </div>
+                <div class="name">
+                    <p>Oversized Sunglasses </p>
+                    <span class="price">
+                        <p>$397.00</p>
+                    </span>
+                    <br>
+                    <div class="most-viewed-icon"><i class="fa-solid fa-cart-shopping"></i> &nbsp; &nbsp;<i
+                            class="fa-regular fa-heart"></i> &nbsp;
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-arrow-left border"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ********************Social*************************** -->
+    <div class="social">
+        <div class=" social-container">
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-linkedin-in"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+            <a><i class="fa-brands fa-skype"></i></a>
+            <a><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+    </div>
+    <!-- @@@@@@@@@@@@@ footer @@@@@@@@@@@@@@ -->
+    <footer class="left-right-margin">
+        <div>
+            <h2>About Us</h2>
+            <hr />
+            <ul>
+                <li><a>About Us</a></li>
+                <li><a>Delivery</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms & Condition</a></li>
+                <li><a>Custom Links</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Customer Service</h2>
+            <hr />
+            <ul>
+                <li><a>Contact</a></li>
+                <li><a>Returns</a></li>
+                <li><a>Site Map</a></li>
+                <li><a>Brands</a></li>
+                <li><a>Unlimited Links</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>My Account</h2>
+            <hr />
+            <ul>
+                <li><a>My Account</a></li>
+                <li><a>Order History</a></li>
+                <li><a>Affiliats</a></li>
+                <li><a>Newslatter</a></li>
+                <li><a>Gifts Certificates</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Newsletter</h2>
+            <hr />
+            <p class="para">
+                Stay up to date with news and promotions by signing up for promotions
+            </p>
+
+            <div class="input-container">
+                <input type="email" placeholder="Your email" />
+                <button><i class="fa-regular fa-envelope"></i> Send</button>
+            </div>
+            <p>
+                <input type="checkbox" name="" id="" /> I have read and agree to the
+                <a>Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+    <div class="copyright left-right-margin ">
+        <div class="copyright-container">
+            <h4 class="">Copyright © 2014,Your Store
+            </h4>
+            <ul class="payment">
+                <li><img src="assets/image/visa.png"></li>
+                <li><img src="assets/image/mastercard.png"></li>
+                <li><img src="assets/image/american-express.png"></li>
+                <li><img src="assets/image/discover.png"></li>
+                <li><img src="assets/image/paypal.png"></li>
+                <li><img src="assets/image/stripe.png"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
